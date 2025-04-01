@@ -887,6 +887,30 @@ section .container {
   right: 15px;
 }
 
+
+/*--------------------------------------------------------------
+# Skills
+--------------------------------------------------------------*/
+
+.language-icon {
+  width: auto;      /* Adjust the width as needed */
+  height: 70px;     /* Maintain aspect ratio */
+  margin-right: 15px; /* Optional: adds spacing between icons */
+}
+
+.framework-icon {
+  width: 200px;      /* Adjust the width as needed */
+  height: auto;     /* Maintain aspect ratio */
+  margin-right: 15px; /* Optional: adds spacing between icons */
+}
+
+.tool-icon {
+  width: auto;      /* Adjust the width as needed */
+  height: 70px;     /* Maintain aspect ratio */
+  margin-right: 15px; /* Optional: adds spacing between icons */
+}
+
+
 /*--------------------------------------------------------------
 # Contact
 --------------------------------------------------------------*/
