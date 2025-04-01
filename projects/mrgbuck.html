@@ -35,37 +35,94 @@
   <body data-gr-c-s-loaded="true">
   
   <!-- ======= Portfolio Details ======= -->
-    <main id="main">
-      <div id="portfolio-details" class="portfolio-details">
-        <div class="container">
-  
-          <div class="row">
-  
-            <div class="col-lg-12 portfolio-info">
-              <br>
-              <h2 style="color:#12d640">MRG2025 PowerBox Buck Converters</h2>
-              <ul>
-                <li><strong>Tech Stack</strong>: Energy Convertion, PCB Design</li>
-                <li><strong>Website URL</strong>: <a href="https://galvanic-music.herokuapp.com/" target="_blank">Link</a></li>
-                <li><strong>Github URL</strong>: <a href="https://github.com/rajaprerak/MusicPlayer" target="_blank">Project Link</a></li>
-              </ul>
-  
-              <p>
-                Buck Converters for MRG on-boat Powerbox. Designed to convert 26V DC power from torpeedo battery to 24V and 19.5V DC power for backseat.          
-              </p>
-              <p>
-                Designed the circuits and PCBs given the MRG inventory and the design requirements. Utilized copper zones for higher current limit and better thermal dissipation.   
-              </p>
-              
+  <main id="main">
+    <div id="portfolio-details" class="portfolio-details">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 portfolio-info">
+            <br>
+            <h2 style="color:#12d640">MRG2025 PowerBox Buck Converters</h2>
+            <ul>
+              <li><strong>Tech Stack</strong>: Energy Conversion, PCB Design</li>
+              <li><strong>Github URL</strong>: <a href="https://github.com/rajaprerak/MusicPlayer" target="_blank">Project Link</a></li>
+            </ul>
 
-            </div>
-  
+            <!-- Context Section -->
+            <h3>Context</h3>
+            <p>
+              For the upcoming 2026 RobotX Competition and as an improvement from the previous semester's RobotX 2024 competition, our Marine Robotics Group is focused on enhancing our WAM-V (the autonomous boat!!). One critical project that I contributed to is the PowerBox, which is essential to the overall electrical architecture of the vessel. In particular, my contributions included drawing the comprehensive System Diagram using Figma and designing two modules: a 26V to 24V step-down converter and a 26V to 19.5V step-down converter. These modules are intended to ensure that the various subsystems of the WAM-V receive clean, regulated power.
+            </p>
+
+            <!-- Project Description Section -->
+            <h3>Project Description</h3>
+            <p>
+              The purpose of the WAM-V power boxes is to deliver stable and precise voltage levels to different subsystems on the WAM-V, which is the vessel used in our marine robotics competitions. As the design requirements for the RobotX 2024 competition have evolved, it has become necessary to update the power box design. The updated design focuses on several key objectives:
+            </p>
+            <ul>
+              <li>Integrating overvoltage and reverse voltage protection</li>
+              <li>Adding protective fuses</li>
+              <li>Implementing power logging capabilities</li>
+              <li>Incorporating user-friendly displays</li>
+              <li>Providing on/off control functionality</li>
+            </ul>
+            <p>
+              The end goal is to create a power management system that not only meets the demanding operational criteria of our robotics system but also improves safety and usability. This update is critical in ensuring that our systems are robust and reliable during both testing and actual competition scenarios.
+            </p>
+
+            <!-- Design Requirements Section -->
+            <h3>Design Requirements</h3>
+            <h4>Electrical Requirements:</h4>
+            <ul>
+              <li>The system must be configurable to provide a range of voltages between 3.3 V and 24 V DC.</li>
+              <li>It is required to be powered by 26V Torqueedo batteries, which are the standard power source on our vessels.</li>
+              <li>The design must incorporate protections against overvoltage, reverse voltage, and overcurrent conditions to prevent damage to downstream electronics.</li>
+              <li>The design should avoid using milled PCBs in favor of a more polished and professional PCB layout.</li>
+              <li>The system should be capable of logging live voltage and current data, which is invaluable for monitoring performance and troubleshooting.</li>
+            </ul>
+            <h4>Mechanical Requirements:</h4>
+            <ul>
+              <li>The power box must be water-resistant, adhering to at least an IPx7 rating to withstand harsh marine environments.</li>
+              <li>It should feature externally accessible on/off functionality for ease of use during field operations.</li>
+              <li>The design is expected to integrate with standard M12 connectors, ensuring compatibility with other system components.</li>
+              <li>There must be a minimum of two output channels to power the various subsystems reliably.</li>
+            </ul>
+
+           <!-- Design Process Section -->
+            <h3>Design Process</h3>
+            <p>
+              Our design process began by establishing larger abstractions and system requirements. After discussions with Aaron and Nick regarding the previous configuration of our boat, I proceeded to draft the PowerBox System Diagram in Figma. This diagram served as the blueprint for our proposed design. Meanwhile, Nick focused on the optimal placement of our PCB boards within the Back-seat Box, ensuring the layout would support efficient heat dissipation and maintenance access.
+            </p>
+
+            <figure style="text-align: center; margin-bottom: 30px;">
+              <img src="/assets/img/project/PowerBox_v2.0.jpg" class="img-fluid" alt="PowerBox System Diagram" width="90%">
+              <figcaption style="margin-top: 10px; font-style: italic; color: #555;">Figure 1: PowerBox System Diagram drafted in Figma.</figcaption>
+            </figure>
+
+            <p>
+              Following the proposal phase, we moved on to the detailed design of the circuits and PCBs. I designed both the 26V to 24V buck converter module and the 26V to 19.5V buck converter module. My work involved power calculations and planning documents (<em>Buck26Vto24&amp;19.5V_v0.1</em>), which guided the schematic and PCB layout designs. Visual documentation, including photos of the circuit diagrams and PCB layouts, was captured for reference and validation.
+            </p>
+
+            <figure style="text-align: center; margin-bottom: 30px;">
+              <embed src="/assets/img/project/MRG2025_Circuit_Design.pdf#toolbar=0" type="application/pdf" width="90%" height="600px" />
+              <figcaption style="margin-top: 10px; font-style: italic; color: #555;">Figure 2: Circuit design documentation in PDF format.</figcaption>
+            </figure>
+
+            <figure style="text-align: center; margin-bottom: 30px;">
+              <img src="/assets/img/project/MRG2025_PCB_Design.png" class="img-fluid" alt="PCB Layout" width="90%">
+              <figcaption style="margin-top: 10px; font-style: italic; color: #555;">Figure 3: Final PCB layout design.</figcaption>
+            </figure>
+
+            <!-- Result and Next Steps Section -->
+            <h3>Result and Next Steps</h3>
+            <p>
+              At this point, the circuit and PCB designs have been finalized and documented with accompanying visuals. Test and integration processes are scheduled as the next phase of the project, where the performance of the buck converters will be evaluated under real-world conditions, and any necessary adjustments will be made.
+            </p>
           </div>
-  
         </div>
-      </div><!-- End Portfolio Details -->
-    </main><!-- End #main -->
-  
+      </div>
+    </div><!-- End Portfolio Details -->
+  </main><!-- End #main -->
+
    <!-- Vendor JS Files -->
     <script async="" src="//www.google-analytics.com/analytics.js"></script><script src="assets/vendor/jquery/jquery.min.js"></script>
     <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
