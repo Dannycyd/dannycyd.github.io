@@ -43,19 +43,68 @@
   
             <div class="col-lg-12 portfolio-info">
               <br>
-              <h2 style="color:#12d640">Two Wheel Robot From Scratch</h2>
+              <h2 style="color:#12d640">Two-Wheel Balancing Robot (From Scratch)</h2>
               <ul>
-                <li><strong>Tech Stack</strong>: Robotics, Embedded System Design, C++ Programming, PID Control, PCB Design</li>
+                <li><strong>Time Span</strong>: 2023</li>
+                <li><strong>Tech Stack</strong>: Embedded C++, PID Control, Circuit Debugging, Sensor Fusion, Mechanical Integration</li>
                 <li><strong>Github URL</strong>: <a href="" target="_blank">Project Link</a></li>
+                <li><strong>Reference</strong>: <a href="https://www.bilibili.com/video/BV1Gc411v73h/" target="_blank">Referenced Project</a></li>
               </ul>
-  
+
+            
+              <h4 class="mt-4 mb-2">ECE 1100 Discovery Project Idea</h4>
               <p>
-                Direct adaptation from  ...     
+                My ECE 1100 Discovery Project centered around building a two-wheel balancing robot from scratch, inspired by a video tutorial on 
+                <a href="https://www.bilibili.com/video/BV1Gc411v73h/" target="_blank">Bilibili</a>. 
+                I wanted to challenge myself by working on a dynamic system that involves real-time sensor feedback, motor control, and embedded programming—core topics in ECE.
               </p>
+            
+              <h4 class="mt-4 mb-2">Project Progress</h4>
+              <p>The project started with component selection and chassis design. Over the semester, I:</p>
+              <ul>
+                <li>Designed and assembled the robot frame using a combination of 3D-printed and off-the-shelf parts.</li>
+                <li>Installed and wired up the DC motors, L298N motor driver, MPU6050 gyroscope/accelerometer, and an Arduino Nano microcontroller.</li>
+                <li>Implemented PID control to maintain balance using IMU data.</li>
+                <li>Tuned the PID values through testing to ensure stability.</li>
+              </ul>
+            
+              <h4 class="mt-4 mb-2">Project Successes and Failures</h4>
+              <p><strong>Successes:</strong></p>
+              <ul>
+                <li>The robot was able to balance successfully and recover from small disturbances.</li>
+                <li>I wrote my own PID loop instead of copying from the tutorial, which deepened my understanding.</li>
+                <li>I gained hands-on experience integrating multiple subsystems and debugging them.</li>
+              </ul>
+              <p><strong>Challenges:</strong></p>
+              <ul>
+                <li>Tuning the PID was harder than expected—small adjustments drastically changed behavior.</li>
+                <li>I initially had wiring errors and power supply issues, which caused motor jitter and sensor dropouts.</li>
+                <li>Working with noisy sensor data required implementing a basic Kalman filter for stability.</li>
+              </ul>
+            
+              <h4 class="mt-4 mb-2">ECE Skills Gained</h4>
+              <ul>
+                <li><strong>Sensor Fusion & Signal Processing:</strong> Working with raw IMU data.</li>
+                <li><strong>Control Systems:</strong> Implementing and tuning a PID controller.</li>
+                <li><strong>Embedded Systems Programming:</strong> Using C++ on STM32 to integrate hardware.</li>
+                <li><strong>Circuit Design & Debugging:</strong> Wiring the Robotics systems and debugging issues using multimeters & serial monitors.</li>
+                <li><strong>Mechanical-Electrical Integration:</strong> Aligning hardware design with control software for optimal performance.</li>
+              </ul>
+            
+              <h4 class="mt-4 mb-2">Final Thoughts</h4>
               <p>
-                A 2-wheel robot that can be controlled through bluetooth.              
+                This project was a fun. I was able to apply what I learned in class to a tangible system that responds to the real world.
+                It strengthened my interest in robotics and control systems, and I now feel more confident working with embedded systems.
               </p>
+              <p>I plan to continue developing this robot by:</p>
+              <ul>
+                <li>Adding autonomous path-following using ultrasonic sensors.</li>
+                <li>Improving stability with a better IMU and more advanced filtering.</li>
+                <li>Remote control through bluetooth on Phone.</li>
+              </ul>
             </div>
+            
+            
   
           </div>
   
