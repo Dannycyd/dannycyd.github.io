@@ -128,19 +128,19 @@
         <ul class="social-list">
 
           <li class="social-item">
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
+            <a href="https://www.linkedin.com/in/yanda-chen-9682b7286/" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
             <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
+              <ion-icon name="logo-whatsapp"></ion-icon>
             </a>
           </li>
 
           <li class="social-item">
-            <a href="#" class="social-link">
+            <a href="https://www.instagram.com/plastictrick1970/" class="social-link">
               <ion-icon name="logo-instagram"></ion-icon>
             </a>
           </li>
@@ -209,7 +209,7 @@
 
         <section class="about-text">
           <p>
-            I’m a second-year Electrical Engineering student at the Georgia Institute of Technology, 
+            I’m a second-year Electrical Engineering student at Georgia Institute of Technology, 
             passionate about Circuit and PCB design, Power systems, and Robotics. 
           </p>
 
@@ -508,18 +508,23 @@
       </article>
 
 
-
-
-
       <!--
         - #RESUME
       -->
 
       <article class="resume" data-page="resume">
 
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
+        <header class="resume-header" 
+                style="display: flex; align-items: center; gap: 6px; margin-bottom: 24px;">
+          <h2 class="h2 article-title" style="margin: 0;">Resume</h2>
+
+          <a href="https://drive.google.com/file/d/1cE3PPHvVTC-teCU23R22wPxuEiq1u81G/view?usp=sharing" target="_blank" title="View Resume"
+            style="display: inline-flex; align-items: center; text-decoration: none; line-height: 1;margin-left: 6px;">
+            <ion-icon name="open-outline" 
+                      style="font-size: 1.5em; color: #777; position: relative; top: -8px; transition: color 0.2s;"></ion-icon>
+          </a>
         </header>
+
 
         <section class="timeline">
 
@@ -673,11 +678,11 @@
 
               <div class="title-wrapper">
                 <h5 class="h5">Embedded Programming</h5>
-                <data value="70">70%</data>
+                <data value="50">50%</data>
               </div>
 
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 70%;"></div>
+                <div class="skill-progress-fill" style="width: 50%;"></div>
               </div>
 
             </li>
@@ -686,11 +691,11 @@
 
               <div class="title-wrapper">
                 <h5 class="h5">Control Systems</h5>
-                <data value="90">90%</data>
+                <data value="60">60%</data>
               </div>
 
               <div class="skill-progress-bg">
-                <div class="skill-progress-fill" style="width: 90%;"></div>
+                <div class="skill-progress-fill" style="width: 60%;"></div>
               </div>
 
             </li>
@@ -812,6 +817,24 @@
               </a>
             </li>
 
+
+            <li class="project-item  active" data-filter-item data-category="lab">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-ASTROS.png" alt="ASTROS" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">ASTROS ROS2 Support</h3>
+
+                <p class="project-category">DCSL</p>
+
+              </a>
+            </li>
+
             <li class="project-item  active" data-filter-item data-category="personal">
               <a href="#">
 
@@ -838,47 +861,12 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-MRG-BACKSEAT.jpg" alt="backseat power" loading="lazy">
+                  <img src="./assets/images/project-MRG-BACKSEAT.png" alt="backseat power" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">WAM-V Backseat Power</h3>
 
                 <p class="project-category">Marine Robotics Group</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="club">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-
-                  <img src="./assets/images/project-RM-BUCKBOOST.JPG" alt="rm buckboost" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">Buckboost Module(Reproduced)</h3>
-
-                <p class="project-category">Roborambler club</p>
-
-              </a>
-            </li>
-
-            <li class="project-item  active" data-filter-item data-category="lab">
-              <a href="#">
-
-                <figure class="project-img">
-                  <div class="project-item-icon-box">
-                    <ion-icon name="eye-outline"></ion-icon>
-                  </div>
-                  <img src="./assets/images/project-ASTROS.jpg" alt="ASTROS" loading="lazy">
-                </figure>
-
-                <h3 class="project-title">ASTROS ROS2 Support</h3>
-
-                <p class="project-category">Lab</p>
 
               </a>
             </li>
@@ -891,7 +879,7 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-ECE2035.jpg" alt="ECE 2035" loading="lazy">
+                  <img src="./assets/images/project-ECE2035.png" alt="ECE 2035" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">ECE 2035 Project</h3>
@@ -909,7 +897,7 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
-                  <img src="./assets/images/project-COE1201.jpg" alt="COE 1201" loading="lazy">
+                  <img src="./assets/images/project-COE1201.png" alt="COE 1201" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">COE 1201 Project</h3>
@@ -945,12 +933,30 @@
                     <ion-icon name="eye-outline"></ion-icon>
                   </div>
 
+                  <img src="./assets/images/project-RM-BUCKBOOST.png" alt="rm buckboost" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Buckboost Module(Reproduced)</h3>
+
+                <p class="project-category">Roborambler</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="club">
+              <a href="#">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
                   <img src="./assets/images/project-RM-ARRAY.png" alt="rm supercap array" loading="lazy">
                 </figure>
 
                 <h3 class="project-title">Supercap Array(Reproduced)</h3>
 
-                <p class="project-category">Roborambler club</p>
+                <p class="project-category">Roborambler</p>
 
               </a>
             </li>
@@ -1001,23 +1007,23 @@
               <a href="#">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                  <img src="./assets/images/blog-25-10-08.png" alt="Team Project Photo Dump" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
+                    <p class="blog-category">The Hive @ GT</p>
 
                     <span class="dot"></span>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2025-10-08">Oct 08, 2025</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">Design conferences in 2022</h3>
+                  <h3 class="h3 blog-item-title">Team Project Photo Dump</h3>
 
                   <p class="blog-text">
-                    Veritatis et quasi architecto beatae vitae dicta sunt, explicabo.
+                    Capturing and processing filtered microwave sensor signals. Filter design successfull!
                   </p>
 
                 </div>
@@ -1029,23 +1035,23 @@
               <a href="#">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                  <img src="./assets/images/blog-25-10-02.png" alt="Diagonal Valley" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
+                    <p class="blog-category">Orlando Universal Studio</p>
 
                     <span class="dot"></span>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2025-10-02">Oct 02, 2025</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">Best fonts every designer</h3>
+                  <h3 class="h3 blog-item-title">Diagonal Valley</h3>
 
                   <p class="blog-text">
-                    Sed ut perspiciatis, nam libero tempore, cum soluta nobis est eligendi.
+                    Avada kedavra! Expelliarmus! Expecto Patronum! 
                   </p>
 
                 </div>
@@ -1057,23 +1063,23 @@
               <a href="#">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                  <img src="./assets/images/blog-25-09-27.png" alt="Sky Around Nav" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
+                    <p class="blog-category">North Avenue</p>
 
                     <span class="dot"></span>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2025-09-27">Sept 27, 2025</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">Design digest #80</h3>
+                  <h3 class="h3 blog-item-title">Sky Around Nav</h3>
 
                   <p class="blog-text">
-                    Excepteur sint occaecat cupidatat no proident, quis nostrum exercitationem ullam corporis suscipit.
+                    A beautiful day at Georgia Tech campus.
                   </p>
 
                 </div>
@@ -1085,23 +1091,23 @@
               <a href="#">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                  <img src="./assets/images/blog-25-08-21.png" alt="The Weeknd Concert" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
+                    <p class="blog-category">Mercedes-Benz Stadium</p>
 
                     <span class="dot"></span>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2025-08-21">Aug 21, 2025</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">UI interactions of the week</h3>
+                  <h3 class="h3 blog-item-title">The Weeknd Concert</h3>
 
                   <p class="blog-text">
-                    Enim ad minim veniam, consectetur adipiscing elit, quis nostrud exercitation ullamco laboris nisi.
+                    A night to remember with amazing vibe and stunning visuals.
                   </p>
 
                 </div>
@@ -1113,23 +1119,23 @@
               <a href="#">
 
                 <figure class="blog-banner-box">
-                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                  <img src="./assets/images/blog-25-07-26.png" alt="PCB Drawing of Greece!" loading="lazy">
                 </figure>
 
                 <div class="blog-content">
 
                   <div class="blog-meta">
-                    <p class="blog-category">Design</p>
+                    <p class="blog-category">Shenzhen, China</p>
 
                     <span class="dot"></span>
 
-                    <time datetime="2022-02-23">Fab 23, 2022</time>
+                    <time datetime="2025-07-26">July 26, 2025</time>
                   </div>
 
-                  <h3 class="h3 blog-item-title">The forgotten art of spacing</h3>
+                  <h3 class="h3 blog-item-title">PCB Drawing of Greece</h3>
 
                   <p class="blog-text">
-                    Maxime placeat, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    A small PCB gift for my friends.
                   </p>
 
                 </div>
@@ -1137,6 +1143,7 @@
               </a>
             </li>
 
+            <!--
             <li class="blog-post-item">
               <a href="#">
 
@@ -1164,6 +1171,7 @@
 
               </a>
             </li>
+            -->
 
           </ul>
 
